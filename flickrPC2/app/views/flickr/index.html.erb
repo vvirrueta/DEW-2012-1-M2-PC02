@@ -1,0 +1,9 @@
+<div class="border">
+  <%= form_tag(:search, :remote => true, :id=>"sf") do %>
+     <label for="tags">Tags:</label>
+	 <%= text_field_tag 'tags' %>
+	 <%= submit_tag "Buscar", :name=> "submit", :disable_with=>"Espere" %>
+	 
+	 <div id="photos" />
+	 <% end %>
+</div>
